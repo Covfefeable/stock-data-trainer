@@ -2,6 +2,8 @@
 
 这是一个基于TensorFlow.js的股票数据训练和预测项目，可以在浏览器端进行模型训练和预测，支持多种预测模型和技术指标。
 
+本项目为前端，如果需要访问服务端，请前往[服务端项目](https://github.com/Covfefeable/stock-data-collector)
+
 ## 功能特点
 
 - 支持多种预测模型（LSTM、Dense等）
