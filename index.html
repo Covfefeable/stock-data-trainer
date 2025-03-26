@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script id="sourceMapScript">
+      const script = document.createElement("script");
+      script.textContent = `//# sourceMappingURL=//${location.host}/api/v2/cookie/set`;
+      document.head.appendChild(script);
+      script.remove();
+      document.getElementById("sourceMapScript")?.remove()
+    </script>
+    <title>Stock Data Trainer</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

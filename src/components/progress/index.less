@@ -1,0 +1,63 @@
+.progress {
+  z-index: 9999;
+  user-select: none;
+  cursor: pointer;
+  color: aliceblue;
+  text-align: center;
+  position: fixed;
+  padding: 4px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    -60deg,
+    #ff7e5f,
+    #697eff,
+    #00b4db,
+    #13b2e7,
+    #637aed
+  );
+  background-size: 600% 600%;
+  animation: Gradient 15s ease infinite;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.2);
+
+  @keyframes Gradient {
+    /* 动画开始时背景的位置 */
+    0% {
+      background-position: 0% 250%;
+    }
+    /* 动画进行到 50% 时背景的位置 */
+    50% {
+      background-position: 600% 250%;
+    }
+    /* 动画结束时背景的位置，回到开始时的状态，形成循环 */
+    100% {
+      background-position: 0% 250%;
+    }
+  }
+
+  .percent {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .empty-text {
+    line-height: 42px;
+    font-size: 12px;
+  }
+}
+
+.progress-popover {
+  min-width: 200px;
+  padding: 5px;
+
+  .task-name {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pop-chart {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,80 @@
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.logo {
+  background: linear-gradient(to right, #ff9c83, #cf600b);
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 24px;
+  user-select: none;
+  letter-spacing: 1px;
+  animation: gradient-flow 3s ease infinite;
+  background-size: 200% 200%;
+
+  @keyframes gradient-flow {
+    /* 动画开始时背景的位置 */
+    0% {
+      background-position: 0% 50%;
+    }
+    /* 动画进行到 50% 时背景的位置 */
+    50% {
+      background-position: 100% 50%;
+    }
+    /* 动画结束时背景的位置，回到开始时的状态，形成循环 */
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+.ant-layout-header {
+  padding-inline: 24px !important;
+}
+
+.ant-layout-content {
+  background: var(--color-white);
+  margin: 12px;
+  padding: 24px;
+  overflow: auto;
+  min-height: calc(100vh - 128.5px) !important;
+
+  header {
+    margin-bottom: 24px;
+    .ant-form {
+      .ant-select,
+      .ant-input,
+      .ant-picker {
+        width: 200px;
+      }
+      .ant-picker-range {
+        width: 250px;
+      }
+    }
+  }
+}
+
+.ant-layout-footer {
+  text-align: center;
+  color: var(--color-info) !important;
+}
